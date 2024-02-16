@@ -14,148 +14,159 @@ body {
 }
 
 .card {
-    width: 500px;
-    height: 300px;
+    width: 300px;
+    height: 180px;
     background-color: #9a85fc;
     border-radius: 20px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.619), rgb(157, 93, 216));
-    box-shadow: 5px 5px 20px gray;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.473);
     position: relative;
     transition: all 0.5s;
-    
-}
-
-.atm .credit-head {
+  }
+  
+  .atm .credit-head {
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     text-shadow: 1px 1px grey;
     position: absolute;
-    top: 20px;
-    left: 40px
-}
-
-.atm .crd-nmb {
-    letter-spacing: 12px;
+    top: 15px;
+    left: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, 
+    "Trebuchet MS", sans-serif;
+  }
+  
+  .atm .crd-nmb {
+    letter-spacing: 3px;
     color: white;
-    font-size: 28px;
+    font-size: 16px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.601);
     position: absolute;
     top: 50%;
-    left: 40px;
-}
-
-.atm .sim {
-    width: 80px;
-    height: 65px;
+    left: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, 
+    "Trebuchet MS", sans-serif;
+  }
+  
+  .atm .sim {
+    width: 40px;
+    height: 35px;
     position: absolute;
     top: 30%;
-    left: 30px;
-}
-
-.atm .bank {
-    width: 80px;
-    height: 80px;
+    left: 15px;
+  }
+  
+  .atm .bank {
+    width: 50px;
+    height: 50px;
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 20px;
     filter: brightness(0) invert(1);
     border-image: 2px;
-}
-
-.atm .expiry {
+  }
+  
+  .atm .expiry {
     color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 10px;
+    font-weight: 300;
     position: absolute;
-    bottom: 80px;
-    left: 40px;
+    bottom: 50px;
+    left: 20px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.601);
-}
-
-.atm .master {
-    width: 120px;
-    height: 60px;
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-}
-
-.atm .name {
-    color: white;
-    font-size: 30px;
-    position: absolute;
-    bottom: 20px;
-    left: 40px;
-    letter-spacing: 12px;
-}
-
-.atm .wifi {
-    width: 40px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, 
+    "Trebuchet MS", sans-serif;
+  }
+  
+  .atm .master {
+    width: 80px;
     height: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+  }
+  
+  .atm .name {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    letter-spacing: 5px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .atm .wifi {
+    width: 25px;
+    height: 25px;
     filter: brightness(0) invert(1);
     position: absolute;
     top: 50%;
-    right: 30px;
-}
-
-.card2 .stripe {
+    right: 20px;
+  }
+  
+  .card2 .stripe {
     width: 100%;
-    height: 60px;
+    height: 30px;
     background-color: black;
     position: absolute;
-    top: 20%; 
-}
-
-.card2  .subdiv .sticker {
+    top: 20%;
+  }
+  
+  .card2 .subdiv .sticker {
     background-color: grey;
     background-image: linear-gradient(white, rgb(69, 65, 65));
-    width: 70px;
-    height: 40px;
+    width: 50px;
+    height: 25px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
     right: 40px;
-}
-
-.card2  .subdiv .white {
+  }
+  
+  .card2 .subdiv .white {
     background-color: white;
     width: 50%;
-    height: 35px;
+    height: 20px;
     position: absolute;
     top: 50%;
-    right: 120px;
-}
-
-.card2 .subdiv p {
-    font-size: 25px;
+    right: 100px;
+  }
+  
+  .card2 .subdiv p {
+    font-size: 12px;
+    font-weight: 600;
     position: absolute;
     top: 50%;
-    left: 130px;
+    left: 60px;
     transform: scale(-1, 1);
-}
-
-.card:hover {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, 
+    "Trebuchet MS", sans-serif;
+  }
+  
+  .card:hover {
     transform: rotateY(180deg);
     transition: all 2s;
-}
-
-.card .card-details{
+  }
+  
+  .card .card-details {
     transition: all 1s linear;
     transition-delay: 0.1s;
-}
-
-.card:hover .card-details {
+  }
+  
+  .card:hover .card-details {
     opacity: 0;
-    transition: all 1s ;
-}
-
-.card2 {
+    transition: all 0.9s;
+  }
+  
+  .card2 {
     opacity: 0;
     transition-delay: 0.1s;
-}
-
-.card:hover .card2 {
+  }
+  
+  .card:hover .card2 {
     opacity: 1;
     transition: all 1s linear;
     transition-delay: 0.5s;
-}
+  }
+  
